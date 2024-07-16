@@ -27,7 +27,7 @@ class SubjectClient(ClientRequest):
         super().__init__()
         self.client_url: str = SUBJECTS_CRUD_API
         self.api_key: str = api_key
-        self.url: str = domain + ':' + port + self.client_url
+        self.url: str = domain + self.client_url
         self.headers = {'Content-Type': 'application/json', 'x-api-key': api_key}
 
     """
