@@ -30,7 +30,7 @@ class DetectFaceFromImageClient(ClientRequest):
         super().__init__()
         self.client_url: str = DETECTION_API
         self.api_key: str = api_key
-        self.url: str = domain + ':' + port + self.client_url
+        self.url: str = domain + self.client_url
 
     def get(self):
         pass
